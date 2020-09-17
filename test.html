@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЕСТ</title>
+    <style>
+table {
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.input2 {
+    width: 100%;
+}
+</style>
+    
+</head>
+  
+<body>
+        <h1><center><strong>ТЕСТ</strong></center></h1>
+        <hr>
+        <h2><center>Дайте відповідь на питання ставлячи галочки</center></h2>
+<form action="https://formspree.io/xoqpayeg" method="POST">
+    <table>
+        <tr>
+            <th>Як часто за останні 2 тижні Вас турбували наступні проблеми?</th>
+            <th>Ні разу</th>
+            <th>Останні 2 тижні</th>
+            <th>Майже кожний день</th>
+        </tr>
+        <tr>
+            <td>Вам не хотілось нічого робити</td>
+            <td><center><input type="radio" id="coding" name="question1" value="Ні разу"></center></td>
+            <td><center><input type="radio" id="coding" name="question1" value="Останні 2 тижні"></center></td>
+            <td><center><input type="radio" id="coding" name="question1" value="Майже кожний день"></center></td>
+        </tr>
+        <tr>
+            <td>У Вас був поганий настрій, Ви були подавленны або переживали почуття безвиході</td>
+            <td><center><input type="radio" id="coding" name="question2" value="Ні разу"></center></td>
+            <td><center><input type="radio" id="coding" name="question2" value="Останні 2 тижні"></center></td>
+            <td><center><input type="radio" id="coding" name="question2" value="Майже кожний день"></center></td>
+        </tr>
+        <tr>
+            <td>Вам було важко заснути, у Вас був переривчастий сон, або Ви занадто багато спали </td>
+            <td><center><input type="radio" id="coding" name="question3" value="Ні разу" required></center></td>
+            <td><center><input type="radio" id="coding" name="question3" value="Останні 2 тижні" required></center></td>
+            <td><center><input type="radio" id="coding" name="question3" value="Майже кожний день" required></center></td>
+        </tr>
+        <tr>
+            <td>Ви були стомлені, або у Вас було мало сил</td>
+            <td><center><input type="radio" id="interrogation" name="question4" value="Ні разу" required></center></td>
+            <td><center><input type="radio" id="interrogation" name="question4" value="Останні 2 тижні" required></center></td>
+            <td><center><input type="radio" id="interrogation" name="question4" value="Майже кожний день" required></center></td>
+        </tr>
+        <tr>
+            <td>У Вас був поганий апетит, або Ви переїдали</td>
+            <td><center><input type="radio" id="interrogation" name="question5" value="Ні разу" required></center></td>
+            <td><center><input type="radio" id="interrogation" name="question5" value="Останні 2 тижні" required></center></td>
+            <td><center><input type="radio" id="interrogation" name="question5" value="Майже кожний день" required></center></td>
+        </tr>
+        <tr>
+            <td>Ви погано про себе думали: вважали себе невдахою, або були в собі розчаровані, або вважали, що підвели свою родину</td>
+            <td><center><input type="radio" id="interrogation" name="question6" value="Ні разу" required></center></td>
+            <td><center><input type="radio" id="interrogation" name="question6" value="Останні 2 тижні" required></center></td>
+            <td><center><input type="radio" id="interrogation" name="question6" value="Майже кожний день" required></center></td>
+        </tr>
+    
+    </table>
+
+        <h3>Вкажіть Ваші данні</h3>
+    
+        <label for="name">Фамілія:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="surename">Ім'я:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="date">Ваша дата народження:</label><br>
+        <input type="date" required><br>
+        
+        Ваша стать:<br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Чол</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Жін</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Інше</label><br>
+        <label for="email">Ваш E-Mail</label><br>
+        <input type="email" name="email" required placeholder="example@example"><br>
+        <label for="tel">Ваш Номер мобільного</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+380976666666"required><br><br>
+        <input type="submit" value="Отримати результат">
+        
+    </form>    
+    
+    
+</body>
+</html>
